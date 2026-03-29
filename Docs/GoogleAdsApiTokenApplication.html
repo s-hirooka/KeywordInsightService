@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Google Ads API Token Application - KeywordInsightService</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #222;
+      margin: 36px 48px;
+      line-height: 1.45;
+      font-size: 14px;
+    }
+    h1, h2, h3 {
+      color: #1a3d7c;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 26px;
+      margin-top: 0;
+      border-bottom: 2px solid #d9e2f3;
+      padding-bottom: 10px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-top: 24px;
+    }
+    .meta {
+      background: #f6f8fb;
+      border: 1px solid #dde4f0;
+      padding: 14px 16px;
+      margin-bottom: 18px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #cfd8e3;
+      padding: 8px 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      background: #eef3fb;
+      width: 30%;
+    }
+    ul {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .note {
+      background: #fff8e6;
+      border-left: 4px solid #f0b400;
+      padding: 10px 12px;
+      margin-top: 12px;
+    }
+    .small {
+      color: #555;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Google Ads API Token Application</h1>
+
+  <div class="meta">
+    <div><strong>Tool Name:</strong> KeywordInsightService</div>
+    <div><strong>Tool Type:</strong> Internal Windows desktop application</div>
+    <div><strong>Company:</strong> S-WORK</div>
+    <div><strong>Primary Website:</strong> https://ppc-work.biz/</div>
+    <div><strong>Primary Contact Email:</strong> s.hirooka.ceo@gmail.com</div>
+    <div><strong>Primary Google Ads Manager Account (MCC):</strong> 222-549-7584</div>
+  </div>
+
+  <h2>1. Business Overview</h2>
+  <p>
+    S-WORK operates a digital marketing business and uses Google Ads for keyword research,
+    campaign planning, and market analysis. We are developing an internal Windows desktop tool
+    named <strong>KeywordInsightService</strong> to support our research workflow.
+  </p>
+
+  <h2>2. Purpose of the Tool</h2>
+  <p>
+    The tool is used only by internal staff to retrieve keyword planning data from the Google Ads API.
+    Its main purpose is to help our team evaluate search demand and competition before planning campaigns
+    and related marketing activities.
+  </p>
+
+  <h2>3. Google Ads API Features Used</h2>
+  <p>
+    The application uses the Google Ads API <strong>Keyword Planning historical metrics</strong> endpoint.
+    For a list of user-input keywords, the tool retrieves the following fields:
+  </p>
+  <ul>
+    <li>Keyword</li>
+    <li>Average monthly searches</li>
+    <li>Competition level</li>
+    <li>Competition index</li>
+    <li>Low top of page bid</li>
+    <li>High top of page bid</li>
+    <li>Retrieved timestamp</li>
+  </ul>
+
+  <h2>4. How the Tool Works</h2>
+  <table>
+    <tr>
+      <th>Platform</th>
+      <td>Windows desktop application built with C# and Windows Forms</td>
+    </tr>
+    <tr>
+      <th>Users</th>
+      <td>Internal employees only</td>
+    </tr>
+    <tr>
+      <th>Authentication</th>
+      <td>Google Ads API developer token and OAuth 2.0 refresh token</td>
+    </tr>
+    <tr>
+      <th>Input</th>
+      <td>User enters one or more keywords, language ID, geo target IDs, and target customer ID</td>
+    </tr>
+    <tr>
+      <th>Output</th>
+      <td>Keyword metrics are displayed in a grid, exported to CSV, and optionally stored in a local SQLite database</td>
+    </tr>
+    <tr>
+      <th>Storage</th>
+      <td>Local machine only, using SQLite and local cache files</td>
+    </tr>
+  </table>
+
+  <h2>5. Data Usage and Storage</h2>
+  <p>
+    Retrieved keyword metrics are used for internal research, analysis, and planning. The data is displayed
+    in the application UI and can be saved locally in a SQLite database for history tracking and reporting.
+    The application also uses local caching and daily usage limits to reduce unnecessary API calls.
+  </p>
+
+  <h2>6. What the Tool Does Not Do</h2>
+  <ul>
+    <li>It does not create ads.</li>
+    <li>It does not modify campaigns, ad groups, or keywords in Google Ads.</li>
+    <li>It does not change bids, budgets, or billing settings.</li>
+    <li>It does not manage payments or perform billing operations.</li>
+    <li>It does not automate ad delivery or ad serving.</li>
+    <li>It does not use Conversion Tracking API or Remarketing API.</li>
+  </ul>
+
+  <h2>7. Intended Access Level Request</h2>
+  <p>
+    We are requesting access beyond test accounts because this tool is intended to retrieve historical keyword
+    planning metrics for production Google Ads accounts that we manage for internal business use.
+  </p>
+
+  <h2>8. Compliance Statement</h2>
+  <p>
+    This application is designed for internal use only. We will use the Google Ads API in compliance with
+    Google Ads API Terms and Conditions and applicable Google policies. Access is limited to authorized internal users.
+  </p>
+
+  <div class="note">
+    <strong>Summary:</strong> KeywordInsightService is an internal keyword research tool that reads historical metrics from
+    Google Ads API for planning and reporting. It does not create, edit, or serve advertisements and does not perform
+    billing-related actions.
+  </div>
+
+  <p class="small">Prepared for Google Ads API token application review.</p>
+</body>
+</html>

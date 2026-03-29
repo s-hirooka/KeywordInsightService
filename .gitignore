@@ -1,0 +1,10 @@
+﻿.env
+bin/
+obj/
+Cache/
+*.db
+*.csv
+daily_usage.json
+/.chrome-profile/
+/.edge-profile/
+/.vs/
